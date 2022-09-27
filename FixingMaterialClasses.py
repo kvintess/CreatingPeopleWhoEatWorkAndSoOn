@@ -1,5 +1,5 @@
 import random
-
+import termcolor
 class Man:
     def __init__(self, name):
         self.name = name
@@ -58,6 +58,6 @@ class Man:
 ivan = Man(name='Иван')
 
 for day in range(1,21):
-    print('============={}==============='.format(day))
+    termcolor.cprint('============={}==============='.format(day), color='yellow')
     ivan.act()
     print(ivan)
